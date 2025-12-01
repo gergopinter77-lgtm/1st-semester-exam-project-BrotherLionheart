@@ -9,13 +9,13 @@
     --padding-default: 20px;
 
     /*colors */
-    --background-color-dark: #111111;
-    --background-color-light: #ededed;
-    --primary-color: #4F3873;
-    --orange-color: #DA7F3A;
-    --grey-color: #666666;
-    --white-color: #FFFFFF;
-    --color-black: #000000;
+    --background-color-dark: #160E0D;
+    --background-color-light: #FEFEE0;
+    --primary-color: #E03A32;
+    --orange-color: #BF3325;
+    --grey-color: #44423E;
+    --white-color: #ededed;
+    --black-color : #000000;
 }
 
 /* reset css*/
