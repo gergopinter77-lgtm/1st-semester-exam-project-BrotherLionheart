@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 :root {
-      /* dimensions */
+    /* dimensions */
     --width-full: 100%;
     --width-12col: 1200px;
 
@@ -18,7 +18,7 @@
     --primary-color: #E03A32;
     --brown-color: #1D0E0A;
     --white-color: #ededed;
-    --black-color : #000000;
+    --black-color: #000000;
 }
 
 /* reset css*/
@@ -37,11 +37,16 @@ html {
     background-color: var(--background-color-light);
 }
 
-.navigation,.hero,.zigzag,.footer {
+.navigation,
+.hero,
+.zigzag,
+.footer {
     width: var(--width-full);
 }
 
 .board-of-directors,.about {
+.boardofdirectors,
+.about {
     width: var(--width-12col);
 }
 
@@ -80,13 +85,14 @@ html {
 .menu-container-logo {
     width: var(--width-12col);
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     margin-left: 80px;
 }
 
 .logo svg {
     width: 160px;
     height: 27.82px;
+
     .cls-1 {
         fill: #fefee0;
     }
@@ -99,7 +105,7 @@ html {
 .menu-container-links {
     width: var(--width-12col);
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -121,18 +127,86 @@ html {
 .navigation-links a:last-child {
     margin-right: 80px;
 }
+  
+/* about the play starts  */
 
-.About-the-play-title {
-display: flex;
-width: 599px;
-height: 281px;
-flex-direction: column;
-justify-content: flex-end;
-color: #BF3324;
-font-family: Marcellus;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.hero-about-the-play {
+    background-color: var(--background-color-light);
+    min-height: 863px;
+    max-height: 863px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 230px;
+
 }
 
+
+.hero-about-the-play-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.hero-about-the-play svg {
+    flex-shrink: 0;
+    height: auto;
+    display: block;
+}
+
+.about-the-play-title {
+    display: flex;
+    width: 599px;
+    height: 281px;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #BF3324;
+    font-size: 35px;
+    font-weight: 400;
+}
+.about-the-play-text-title {
+    font-size: 24px;
+}
+.about-the-play-text-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.about-the-play-text-title b {
+    font-size: 48px;
+    font-weight: normal;
+}
+/* about the play ends */
+
+/* author section starts */
+.author {
+    background-color: var(--black-color);
+    min-height: 435px;
+    max-height: 435px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+.author-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.author-name {
+    grid-row: 1;
+    margin: 89px 0 0 0;
+    color: var(--background-color-light);
+    grid-column: 1 / span 7;
+    font-size: 24px;
+    font-weight: 200;
+}
