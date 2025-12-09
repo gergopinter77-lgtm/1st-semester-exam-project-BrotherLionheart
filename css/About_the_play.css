@@ -45,8 +45,6 @@ html {
 }
 
 .board-of-directors,.about {
-.boardofdirectors,
-.about {
     width: var(--width-12col);
 }
 
