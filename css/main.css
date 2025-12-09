@@ -9,11 +9,10 @@
     --padding-default: 20px;
 
     /*colors */
-    --background-color-dark: #160E0D;
+    --background-color-dark: #170F0D;
     --background-color-light: #FEFEE0;
     --primary-color: #E03A32;
-    --orange-color: #BF3325;
-    --grey-color: #44423E;
+    --brown-color: #1D0E0A;
     --white-color: #ededed;
     --black-color : #000000;
 }
