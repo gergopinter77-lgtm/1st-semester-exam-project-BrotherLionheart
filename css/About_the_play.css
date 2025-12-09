@@ -1,2 +1,122 @@
 /*about the play page starts here*/
 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+      /* dimensions */
+    --width-full: 100%;
+    --width-12col: 1200px;
+
+
+    /* grid settings */
+    --grid-gap: 10px;
+    --padding-default: 20px;
+
+    /*colors */
+    --background-color-dark: #170F0D;
+    --background-color-light: #FEFFE0;
+    --primary-color: #E03A32;
+    --brown-color: #1D0E0A;
+    --white-color: #ededed;
+    --black-color : #000000;
+}
+
+/* reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+
+html {
+    width: var(--width-full);
+    font-family: 'Marcellus', serif;
+    position: relative;
+    background-color: var(--background-color-light);
+}
+
+.navigation,.hero,.zigzag,.footer {
+    width: var(--width-full);
+}
+
+.boardofdirectors,.about {
+    width: var(--width-12col);
+}
+
+
+.header {
+    background-color: var(--brown-color);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--grid-gap);
+    width: var(--width-full);
+}
+
+.navigation {
+    background-color: var(--brown-color);
+    padding: 17.5px 0 17.5px 0;
+    position: absolute;
+    z-index: 10;
+    width: var(--width-full);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: var(--width-full);
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container-logo {
+    width: var(--width-12col);
+    display: flex;
+    flex-direction: row;  
+    margin-left: 80px;
+}
+
+.logo svg {
+    width: 160px;
+    height: 27.82px;
+    .cls-1 {
+        fill: #fefee0;
+    }
+
+    .cls-2 {
+        fill: #e03a32;
+    }
+}
+
+.menu-container-links {
+    width: var(--width-12col);
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-end;
+}
+
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navigation-links a {
+    color: var(--background-color-light);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+.navigation-links a:last-child {
+    margin-right: 80px;
+}
