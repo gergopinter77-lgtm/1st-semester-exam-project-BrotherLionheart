@@ -41,7 +41,7 @@ html {
     width: var(--width-full);
 }
 
-.boardofdirectors,.about {
+.board-of-directors,.about {
     width: var(--width-12col);
 }
 
@@ -58,6 +58,7 @@ html {
 }
 
 .navigation {
+    height: 60px;
     background-color: var(--brown-color);
     padding: 17.5px 0 17.5px 0;
     position: absolute;
