@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 :root {
-      /* dimensions */
+    /* dimensions */
     --width-full: 100%;
     --width-12col: 1200px;
 
@@ -18,7 +18,7 @@
     --primary-color: #E03A32;
     --brown-color: #1D0E0A;
     --white-color: #ededed;
-    --black-color : #000000;
+    --black-color: #000000;
 }
 
 /* reset css*/
@@ -37,11 +37,15 @@ html {
     background-color: var(--background-color-light);
 }
 
-.navigation,.hero,.zigzag,.footer {
+.navigation,
+.hero,
+.zigzag,
+.footer {
     width: var(--width-full);
 }
 
-.boardofdirectors,.about {
+.boardofdirectors,
+.about {
     width: var(--width-12col);
 }
 
@@ -79,13 +83,14 @@ html {
 .menu-container-logo {
     width: var(--width-12col);
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     margin-left: 80px;
 }
 
 .logo svg {
     width: 160px;
     height: 27.82px;
+
     .cls-1 {
         fill: #fefee0;
     }
@@ -98,7 +103,7 @@ html {
 .menu-container-links {
     width: var(--width-12col);
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -121,17 +126,54 @@ html {
     margin-right: 80px;
 }
 
-.About-the-play-title {
-display: flex;
-width: 599px;
-height: 281px;
-flex-direction: column;
-justify-content: flex-end;
-color: #BF3324;
-font-family: Marcellus;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+/* about the play starts  */
+
+.hero-about-the-play {
+    background-color: var(--background-color-light);
+    min-height: 878px;
+    max-height: 878px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 230px;
+
 }
 
+
+.hero-about-the-play-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hero-about-the-play svg {
+    flex-shrink: 0;
+    height: auto;
+    display: block;
+}
+
+.about-the-play-title {
+    display: flex;
+    width: 599px;
+    height: 281px;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #BF3324;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about-the-play-text-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.about-the-play-text-title b {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+/* about the play ends */
