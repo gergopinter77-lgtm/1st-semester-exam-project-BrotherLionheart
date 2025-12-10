@@ -179,6 +179,7 @@ html {
 }
 /* about the play ends */
 
+
 /* author section starts */
 .author {
     background-color: var(--black-color);
@@ -191,10 +192,11 @@ html {
     position: relative;
     margin: 0;
 }
+
 .author-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: max-content 1fr;
     gap: var(--grid-gap);
     width: var(--width-12col);
     height: 100%;
@@ -202,9 +204,41 @@ html {
 
 .author-name {
     grid-row: 1;
-    margin: 89px 0 0 0;
+    margin: 85px 0 0 0;
     color: var(--background-color-light);
-    grid-column: 1 / span 7;
+    grid-column: 1 / span 3;
     font-size: 24px;
     font-weight: 200;
+}
+
+.author-container-img {
+    grid-row: 2;
+    margin-top: 0;
+    grid-column: 1 / span 3;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+.author-container-img img {
+    width: 173.541px;
+    height: 249px;
+    aspect-ratio: 173.54/249.00;
+}
+
+.author-container-text {
+    grid-row: 1 / span 2;
+    margin: 89px 0 0 0;
+    color: var(--background-color-light);
+    grid-column: 4 / span 9;
+    font-size: 24px;
+}
+
+.author-container-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.author-container-text b {
+    font-size: 48px;
+    font-weight: normal;
 }
