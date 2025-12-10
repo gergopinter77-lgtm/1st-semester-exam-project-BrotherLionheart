@@ -119,3 +119,112 @@ html {
 .navigation-links a:last-child {
     margin-right: 80px;
 }
+
+.hero-video-page {
+    min-height: 500px;
+    max-height: 500px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    margin-bottom: 200px;
+}
+
+.hero-video-page-container{
+    display: grid;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-rows: auto auto auto;
+    /*gap: var(--grid-gap);*/
+    width: var(--width-12col);
+    height: 100%;
+    margin-top: 69px;
+}
+
+.hero-video-page-container-text {
+    display: grid;
+    justify-content: center;
+    grid-column: span 1 / span 4;
+}
+
+.hero-video-page-container-text h1{
+    color: var(--primary-color);
+    font-size: 80px;
+    font-family: 'Marcellus', serif;
+    align-self: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+.hero-video-page-container-text h1 span{
+    color: var(--primary-color);
+    font-size: 120px;
+    font-family: 'Marcellus', serif;
+    align-self: center;
+    text-transform:uppercase;
+}
+
+.hero-video-page-container-img{
+    grid-column: 4 / span 8;
+}
+
+.hero-video-page-container-img-img img{
+    height: auto; /*or %*/
+    width: 990px; /*or %*/
+}
+
+.video-section {
+    display: flex;
+    gap: var(--grid-gap);
+    background-color: var(--background-color-dark);
+    justify-content: center;
+    width: var(--width-full);
+    padding-top: 30px;
+}
+
+.video-section-stuff{
+    display: flex;
+    
+}
+
+.video-section-video {
+    grid-column: 1 / span 6;
+}
+
+.video-section-left{
+    display: grid;
+    width: 600px;
+}
+
+.video-section-left-image {
+    grid-column: 7 / span 6;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--background-color-light);
+}
+
+.video-section-left-image img{
+    width: 230px;
+    height: 330px;
+    background-image: var(--background-color-light);
+}
+
+.video-section-left-text{
+    display: grid;
+    padding-left: 40px;
+}
+.video-section-left-text a{
+    align-self: center;
+    color: var(--background-color-light);
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 50px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.music-house-section{
+    display: flex;
+    justify-content: center;
+    width: var(--width-12col);
+}
