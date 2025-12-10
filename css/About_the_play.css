@@ -242,3 +242,40 @@ html {
     font-size: 48px;
     font-weight: normal;
 }
+
+/*Illustrator section starts*/
+
+.illustrator {
+    background-color: var(--background-color-light);
+    min-height: 435px;
+    max-height: 435px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+.illustrator-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content 1fr;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.illustrator-container-img {
+    grid-row: 2;
+    margin-top: 0;
+    grid-column: 1 / span 3;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+.illustrator-container-img img {
+width: 176px;
+height: 242px;
+aspect-ratio: 8/11;
+}
