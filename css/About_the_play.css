@@ -266,7 +266,7 @@ html {
     height: 100%;
 }
 
-.illustrator-container-img {
+.illustrator-container-img-right {
     grid-row: 2;
     margin-top: 0;
     grid-column: 1 / span 3;
@@ -274,8 +274,53 @@ html {
     align-self: flex-start;
 }
 
-.illustrator-container-img img {
-width: 176px;
-height: 242px;
-aspect-ratio: 8/11;
+.illustrator-container-img-right img {
+    width: 420px;
+    height: 303px;
+    aspect-ratio: 140/101;
+}
+
+.illustrator-name {
+    grid-row: 1;
+    margin: 85px 0 0 0;
+    color: var(--background-color-dark);
+    grid-column: 11 / span 6;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.illustrator-container-img-left {
+    grid-column: 7 / span 6;
+    display: flex;
+    justify-content: flex-end;
+    grid-row: 2;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.illustrator-container-img-left img {
+    width: 176px;
+    height: 242px;
+    aspect-ratio: 8/11;
+
+}
+
+.illustrator-container-text {
+    grid-row: 1 / span 2;
+    margin: 89px 0 0 0;
+    color: var(--background-color-dark);
+    grid-column: 6 / span 10;
+    font-size: 24px;
+
+}
+
+
+.illustrator-container-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.illustrator-container-text b {
+    font-size: 48px;
+    font-weight: normal;
 }
