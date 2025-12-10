@@ -121,7 +121,7 @@ body {
 /*navigation end*/
 
 .hero {
-    min-height: 440px;
+    min-height: 550px; /*original 440*/
     display: flex;
     height: auto;
     background-size: cover;
@@ -145,6 +145,7 @@ body {
     grid-column: 8 / span 5;
     grid-row: 2;
     color: var(--primary-color);
+    margin: 60px 0 0 0;
 }
 
 .hero_text h1 {
@@ -161,7 +162,7 @@ body {
     grid-row: 3;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero_button button {
@@ -173,4 +174,56 @@ body {
     color: var(--background-color-light);
     text-decoration: none;
     font-size: 30px;
+    font-family: 'Marcellus', serif;
+}
+
+.get_tickets {
+    background-color: var(--background-color-dark);
+    min-height: 453px; /*original 293, then 353 without padding*/
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px 0;
+}
+
+.tickets_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.tickets_button {
+    grid-column: 6 / span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickets_button button {
+    background-color: var(--background-color-dark);
+    border: 1px solid var(--background-color-dark);
+}
+
+.tickets_button button a {
+    color: var(--background-color-light);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Marcellus', serif;
+}
+
+.footer {
+    background-color: var(--background-color-dark);
+    padding: 20px 0 50px 0;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
 }
