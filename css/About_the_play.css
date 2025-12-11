@@ -169,10 +169,11 @@ html {
 
 .about-the-play-text-title {
     font-size: 24px;
-    
+
 }
 
-.about-the-play-text-title a {
+.about-the-play-text-title i {
+    font-style: normal;
     color: var(--primary-color);
     text-decoration: none;
 }
