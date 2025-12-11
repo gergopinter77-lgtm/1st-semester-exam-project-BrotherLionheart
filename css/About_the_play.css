@@ -147,7 +147,7 @@ html {
 .hero-about-the-play-container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 100px;
 }
 
 .hero-about-the-play svg {
@@ -169,6 +169,7 @@ html {
 
 .about-the-play-text-title {
     font-size: 24px;
+    
 }
 
 .about-the-play-text-title a {
@@ -225,9 +226,9 @@ html {
 }
 
 .author-container-left-img img {
-    width: 438px;
-    height: 428px;
-    aspect-ratio: 219/214;
+    width: 541px;
+    height: 529px;
+    aspect-ratio: 541/529;
 }
 
 .author-container-img {
