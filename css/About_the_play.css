@@ -44,7 +44,8 @@ html {
     width: var(--width-full);
 }
 
-.board-of-directors,.about {
+.board-of-directors,
+.about {
     width: var(--width-12col);
 }
 
@@ -125,7 +126,7 @@ html {
 .navigation-links a:last-child {
     margin-right: 80px;
 }
-  
+
 /* about the play starts  */
 
 .hero-about-the-play {
@@ -146,7 +147,7 @@ html {
 .hero-about-the-play-container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 100px;
 }
 
 .hero-about-the-play svg {
@@ -165,10 +166,14 @@ html {
     font-size: 35px;
     font-weight: 400;
 }
+
 .about-the-play-text-title {
     font-size: 24px;
+
 }
-.about-the-play-text-title a {
+
+.about-the-play-text-title i {
+    font-style: normal;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -177,6 +182,7 @@ html {
     font-size: 48px;
     font-weight: normal;
 }
+
 /* about the play ends */
 
 
@@ -211,6 +217,21 @@ html {
     font-weight: 200;
 }
 
+.author-container-left-img {
+    grid-row: 1;
+    margin-top: 0;
+    white-space: nowrap;
+    align-self: self-end;
+    position: absolute;
+    right: 0px;
+}
+
+.author-container-left-img img {
+    width: 541px;
+    height: 529px;
+    aspect-ratio: 541/529;
+}
+
 .author-container-img {
     grid-row: 2;
     margin-top: 0;
@@ -233,7 +254,8 @@ html {
     font-size: 24px;
 }
 
-.author-container-text a {
+.author-container-text i {
+    font-style: normal;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -315,7 +337,8 @@ html {
 }
 
 
-.illustrator-container-text a {
+.illustrator-container-text i {
+    font-style: normal;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -323,4 +346,46 @@ html {
 .illustrator-container-text b {
     font-size: 48px;
     font-weight: normal;
+}
+
+/* about the play page ends here*/
+
+
+
+.support-scarntyden {
+    display: flex;
+    justify-content: center;
+    margin: 36px 0 36px 0;
+}
+
+.support-scarntyden a {
+    color: var(--background-color-dark);
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.next-page-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.next-page-button button {
+    height: 35px;
+    width: 117px;
+    background-color: var(--background-color-dark);
+    border: none;
+}
+
+.next-page-button button a {
+    color: var(--background-color-light);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+}
+
+.footer-section {
+    background-color: var(--brown-color);
+    height: 84px;
+    width: var(--width-full);
 }
