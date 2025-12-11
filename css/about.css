@@ -175,7 +175,7 @@ html {
     height: fit-content;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 130px auto;
+    grid-template-rows: 60px auto;
     gap: var(--grid-gap);
     box-sizing: border-box;
     margin: 0 auto;
@@ -205,6 +205,7 @@ html {
     width: var(--width-12col);
     box-sizing: border-box;
     margin-bottom: 15px;
+    margin-top: 70px;
 }
 
 .board-of-directors-contet-block-thomas {
@@ -214,6 +215,33 @@ html {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.claw-left {
+    position: absolute;
+    white-space: nowrap;
+    z-index: 10000;
+    rotate: -35.52deg;
+    top: -5px;
+}
+
+.claw-left img {
+    height: 165.78px;
+    width: 248.67px;
+}
+
+.claw-right {
+    position: absolute;
+    z-index: 10000;
+    rotate: 35.52deg;
+    top: 20px;
+    right: 16px;
+    justify-self: right;
+}
+
+.claw-right img {
+    height: 136.03px;
+    width: 204.5px;
 }
 
 .board-of-directors-contet-block-silhja {
@@ -306,6 +334,8 @@ html {
 
 .main-carousel {
     margin-bottom: 80px;
+    height: fit-content;
+    overflow: visible;
 }
 
 .flickity-button {
