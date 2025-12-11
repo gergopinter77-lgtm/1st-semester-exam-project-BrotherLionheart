@@ -218,6 +218,9 @@ body {
     grid-column: 1 / span 3;
     display: flex;
     grid-row: 2;
+    position: absolute;
+    top:  560px;
+    left: 100px;
 }
 
 
@@ -253,4 +256,8 @@ body {
     width: var(--width-12col);
     height: 100%;
     margin: 0 auto;
+}
+
+@media (max-width:600px) {
+
 }
