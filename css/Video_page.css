@@ -179,7 +179,7 @@ html {
     background-color: var(--background-color-dark);
     justify-content: center;
     width: var(--width-full);
-    padding-top: 30px;
+    padding: 30px 0;
 }
 
 .video-section-stuff{
@@ -207,6 +207,8 @@ html {
     width: 230px;
     height: 330px;
     background-image: var(--background-color-light);
+    position: absolute;
+    right: 0px;
 }
 
 .video-section-left-text{
@@ -223,8 +225,80 @@ html {
     text-transform: capitalize;
 }
 
-.music-house-section{
+.video-page-music-house-about-section{
     display: flex;
     justify-content: center;
+    margin: 30px 0 ;
+}
+
+.video-page-music-house-about-section-container{
     width: var(--width-12col);
+}
+
+.video-page-music-house-about-section-container-header-first{
+    display: flex;
+    height: 150px;
+}
+
+.video-page-music-house-about-section-container-svg svg{
+    width: 250px;
+    height: 250px;
+        .cls-1 {
+            stroke-width: 3.09px;
+        }
+
+        .cls-1, .cls-2, .cls-3 {
+            fill: none;
+            stroke: #231f20;
+            stroke-miterlimit: 10;
+        }
+
+        .cls-2 {
+            stroke-width: 3.08px;
+        }
+
+        .cls-3 {
+            stroke-width: 3px;
+        };
+}
+
+.video-page-music-house-about-section-container-first-text{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Marcellus', serif;
+}
+
+.video-page-music-house-about-section-container-first-text p span {
+    color: var(--primary-color);
+}
+
+.video-page-music-house-about-section-container-first-text p span span {
+    font-size: 30px;
+} 
+.video-page-music-house-about-section-container-header-second {
+    font-family: 'Marcellus', serif;
+    font-size: 20px
+}
+
+
+.support-scarntyden {
+    display: flex;
+    justify-content: center;
+    margin: 36px 0 0 0;
+    padding-top: 48px;
+    background-color: var(--background-color-dark);
+}
+
+.support-scarntyden a {
+    color: var(--background-color-light);
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.footer-section {
+    background-color: var(--brown-color);
+    height: 84px;
+    width: var(--width-full);
 }
