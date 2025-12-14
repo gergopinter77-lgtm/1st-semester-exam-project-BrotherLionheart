@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 :root {
-      /* dimensions */
+    /* dimensions */
     --width-full: 100%;
     --width-12col: 1200px;
 
@@ -16,7 +16,7 @@
     --primary-color: #E03A32;
     --brown-color: #1D0E0A;
     --white-color: #ededed;
-    --black-color : #000000;
+    --black-color: #000000;
 }
 
 /* reset css*/
@@ -35,11 +35,15 @@ html {
     background-color: var(--background-color-light);
 }
 
-.navigation,.hero,.zigzag,.footer {
+.navigation,
+.hero,
+.zigzag,
+.footer {
     width: var(--width-full);
 }
 
-.boardofdirectors,.about {
+.boardofdirectors,
+.about {
     width: var(--width-12col);
 }
 
@@ -55,31 +59,61 @@ html {
     width: var(--width-full);
 }
 
-.navigation {
-    height: 60px;
-    background-color: var(--brown-color);
-    padding: 17.5px 0 17.5px 0;
-    position: absolute;
-    z-index: 10;
+.navigation,.hero,.zigzag,.footer {
     width: var(--width-full);
-    display: flex;
-    justify-content: center;
 }
 
-.navigation.fixed {
+.boardofdirectors,.about {
+    width: var(--width-12col);
+}
+
+
+header {
     position: fixed;
     top: 0;
-    z-index: 1000;
-    width: var(--width-full);
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    background-color: var(--brown-color);
+    z-index: 10000;
 }
 
-.menu-container-logo {
-    width: var(--width-12col);
+li {
+    list-style: none;
+}
+
+a{
+    color:  var(--background-color-light);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-container {
+    width: var(--width-full);
+    margin: auto;
+}
+
+.header-content {
+    width: 79%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
     display: flex;
-    flex-direction: row;  
-    margin-left: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    height: 27.82px;
+    width: 160px;
 }
 
 .logo svg {
@@ -94,32 +128,19 @@ html {
     }
 }
 
-.menu-container-links {
-    width: var(--width-12col);
-    display: flex;
-    flex-direction: row;  
-    justify-content: flex-end;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-
-.navigation-links {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color:  var(--background-color-light);
 }
-
-.navigation-links a {
-    color: var(--background-color-light);
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 50px;
-    white-space: nowrap;
-}
-
-.navigation-links a:last-child {
-    margin-right: 80px;
-}
-
 .hero-about {
     background-color: var(--background-color-dark);
     min-height: 500px;
@@ -280,7 +301,7 @@ html {
 .board-of-directors-content-block-position {
     display: flex;
     align-items: center;
-    font-size: 20px;        
+    font-size: 20px;
 }
 
 
@@ -344,13 +365,14 @@ html {
 }
 
 .flickity-button:disabled {
-  display: none;
+    display: none;
 }
 
 .description {
     width: var(--width-full);
     background-color: var(--background-color-dark);
 }
+
 .description-part {
     width: var(--width-12col);
     height: fit-content;
@@ -459,7 +481,7 @@ html {
     display: flex;
     flex-wrap: nowrap;
     min-width: var(--width-12col);
-    height: 347px; 
+    height: 347px;
 }
 
 .description-fun-text {
@@ -469,7 +491,7 @@ html {
     padding: 92px 106px;
     background-color: var(--background-color-light);
     height: 347px;
-    width: 600px; 
+    width: 600px;
 }
 
 .description-fun-text p {
@@ -530,4 +552,49 @@ html {
     background-color: var(--brown-color);
     height: 84px;
     width: var(--width-full);
+}
+
+
+@media(max-width: 1600px) {
+    .header-container {
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:  var(--brown-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
