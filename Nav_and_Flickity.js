@@ -18,5 +18,6 @@ addEventListener("clcik", () => {
 var flickity = new Flickity('.carousel', {
     cellAlign: 'left',
     contain: true,
+    fullscreen:true,
 })
 
