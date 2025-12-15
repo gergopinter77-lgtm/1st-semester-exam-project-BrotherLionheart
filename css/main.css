@@ -208,6 +208,28 @@ a{
     left: 100px;
 }
 
+.tickets_next {
+    grid-column: 6 / span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.tickets_next button {
+    height: 35px;
+    width: 117px;
+    background-color: var(--background-color-light);
+    border: none;
+}
+
+.tickets_next button a {
+    color: var(--background-color-dark);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+}
 
 .tickets_button {
     grid-column: 6 / span 2;
@@ -215,6 +237,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 200px 0 0 0;
 }
 
 .tickets_button button {
@@ -225,7 +248,7 @@ a{
 .tickets_button button a {
     color: var(--background-color-light);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Marcellus', serif;
 }
 
@@ -292,28 +315,39 @@ a{
 }
 
 .hero_bridge {
-        grid-column: 3 / span 8;
-        grid-row: 2;
-        margin: 50px 0 0 0 ;
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    margin: 50px 0 0 0 ;
+}
+
+.hero_bridge svg {
+    padding: 60px 0 0 0;
 }
 
 .hero_text {
     grid-column: 3 / span 8;
     grid-row: 1;
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
 .hero_text h1 {
-    font-size: 65px;
+    font-size: 60px;
 }
 
 .hero_button {
     grid-column: 5 / span 4;
     grid-row: 2;
+    margin: 230px 0 0 0;
     align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+
 }
 
 .hero_button button a {
-        font-size: 15px;
+    font-size: 10px;
+    flex-wrap: nowrap;
 }
 
 .hero_cherry {
@@ -337,7 +371,16 @@ a{
    grid-column: 5 / span 8;
    justify-content: flex-start;
    align-items: flex-end;
-   margin: 180px 0 0 0;
+   margin: 200px 0 0 0;
+}
+
+.tickets_next {
+    margin: 60px 0 0 0;
+}
+
+
+.tickets_next button a {
+    font-size: 15px;
 }
 
 
