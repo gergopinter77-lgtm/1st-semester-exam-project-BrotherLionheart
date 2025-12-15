@@ -131,8 +131,8 @@ a{
     grid-column: 2 / span 7;
     grid-row: 2;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+   /* align-items: flex-end;
+    justify-content: flex-end;*/
 }
 
 .hero_cherry {
@@ -144,6 +144,19 @@ a{
     position: absolute;
     top:  75px;
     left: 0px;
+}
+
+.hero_cherry_right {
+    grid-column: 11 / span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scaleX(-1);
+    position: absolute;
+    right: -0px;
+    top: 60px;
+    display: none;
 }
 
 .hero_text {
@@ -275,7 +288,11 @@ a{
 @media (max-width:600px) {
 :root {
     --width-full: 100%;
-    --width-12col: 600px;
+    --width-12col: 100%;
+}
+
+.body, html {
+    overflow-x: hidden;
 }
 
 .hamburger{
@@ -314,17 +331,29 @@ a{
     left: 0;
 }
 
+.hero {
+    min-height: auto;
+    height: auto;
+}
+
 .hero_bridge {
+    display: flex;
+    align-items: center;
     grid-column: 3 / span 8;
     grid-row: 2;
-    margin: 50px 0 0 0 ;
+    margin-top: 170px;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 
 .hero_bridge svg {
     padding: 60px 0 0 0;
+    width: 100%;
+    height: 100%;
 }
 
 .hero_text {
+    margin-top: 114px;
     grid-column: 3 / span 8;
     grid-row: 1;
     text-align: center;
@@ -338,44 +367,60 @@ a{
 .hero_button {
     grid-column: 5 / span 4;
     grid-row: 2;
-    margin: 230px 0 0 0;
-    align-items: flex-start;
+    margin-top: 45px;
     justify-content: center;
-    flex-wrap: nowrap;
-
 }
 
 .hero_button button a {
-    font-size: 10px;
+    font-size: 14px;
     flex-wrap: nowrap;
 }
 
+.hero_button button {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
 .hero_cherry {
-  width: 60%;
-  height: 60%;
-  align-items: flex-start;
-  top:  190px;
-  right: 200px;
+    margin-top: 90px;
+    align-items: flex-start;
 }
 
 .hero_cherry svg {
-    padding-right: 85px;
+    width: 55%;
+    height: 55%;
+}
+
+.hero_cherry_right {
+    position: absolute;
+    display: block;
+    margin-top: 50px;
+}
+
+.hero_cherry_right svg{
+    width: 55%;
+    height: 55%;
+    rotate: -4deg;
 }
 
 .tickets_cherry {
+    display: none;
     top:  630px;
     left: 50px;
 }
 
+.tickets_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tickets_button {
-   grid-column: 5 / span 8;
-   justify-content: flex-start;
-   align-items: flex-end;
-   margin: 200px 0 0 0;
+   margin: 15px 0 0 0;
 }
 
 .tickets_next {
-    margin: 60px 0 0 0;
+    margin: 110px 0 0 0;
 }
 
 
@@ -384,4 +429,77 @@ a{
 }
 
 
+}
+
+@media (max-width:573px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+}
+
+.hero_text h1 {
+    font-size: 50px;
+}
+
+.hero_button {
+    margin-top: 15px;
+}
+
+.hero_bridge {
+    margin-top: 180px;
+}
+}
+@media (max-width:528px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+}
+
+.hero_cherry_right{
+    margin-top: 60px;
+}
+
+.hero_cherry svg, .hero_cherry_right svg {
+    width: 45%;
+    height: 45%;
+}
+}
+
+@media (max-width: 475px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+} 
+
+.hero_text h1 {
+    font-size: 45px;
+}
+
+}
+
+@media (max-width: 450px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+}   
+
+    .hero_cherry svg, .hero_cherry_right svg {
+    width: 40%;
+    height: 40%;
+}
+}
+@media (max-width: 412px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+}   
+
+    .hero_text h1 {
+        font-size: 40px;
+    }
+
+    .hero_cherry svg, .hero_cherry_right svg {
+    width: 38%;
+    height: 38%;
+}
 }
