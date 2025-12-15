@@ -392,17 +392,13 @@ html {
 
 /* mobile starts*/
 
-@media screen and (max-width: 768px) {
+@media(max-width:400px) {
 
     :root {
         --width-12col: 100%;
         --padding-default: 20px;
     }
 
-    body, html {
-        overflow-x: hidden;
-        width: 100%;
-    }
 
     .container {
         width: 100%;
@@ -513,7 +509,7 @@ html {
     .author-container-img {
         width: 35%;
         order: 2;
-        margin: 0;
+    
     }
 
     .author-container-img img {
@@ -522,6 +518,7 @@ html {
         border-radius: 5px;
         aspect-ratio: 1/1;
         object-fit: cover;
+        margin: 20px 0 0 0;
     }
 
     .author-container-text {
@@ -616,7 +613,7 @@ html {
         width: 35%;
         order: 3;
         display: block;
-        margin: 0;
+        margin: 20px 0 0 0;
     }
 
     .illustrator-container-img-left img {
