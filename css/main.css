@@ -320,8 +320,12 @@ a{
   width: 60%;
   height: 60%;
   align-items: flex-start;
-  top:  170px;
+  top:  190px;
   right: 200px;
+}
+
+.hero_cherry svg {
+    padding-right: 85px;
 }
 
 .tickets_cherry {
