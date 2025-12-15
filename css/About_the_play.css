@@ -392,11 +392,16 @@ html {
 
 /* mobile starts*/
 
-@media(max-width:400px) {
+@media screen and (max-width: 768px) {
 
     :root {
         --width-12col: 100%;
         --padding-default: 20px;
+    }
+
+        body, html {
+        overflow-x: hidden;
+        width: 100%;
     }
 
 
@@ -418,7 +423,7 @@ html {
         position: absolute;
         bottom: 0;
         left: -10%;
-        width: 70%;
+        width: 65%;
         height: auto;
         margin: 0;
     }
