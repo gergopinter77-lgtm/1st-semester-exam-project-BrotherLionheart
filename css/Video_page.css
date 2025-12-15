@@ -362,7 +362,7 @@ a{
     background-color:  var(--brown-color);
     width: 100%;
     text-align: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .nav-item {
