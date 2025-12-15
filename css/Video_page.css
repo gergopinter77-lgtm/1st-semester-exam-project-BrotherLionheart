@@ -331,7 +331,7 @@ a{
 @media (max-width:600px) {
 :root {
     --width-full: 100%;
-    --width-12col: 600px;
+    --width-12col: 100%;
 }
 .body, html {
     overflow-x: hidden;
@@ -362,7 +362,7 @@ a{
     background-color:  var(--brown-color);
     width: 100%;
     text-align: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .nav-item {
@@ -374,22 +374,44 @@ a{
 }
 
 .hero-video-page {
-    max-height: 710px;
+    min-height: 660px;
 }
 .hero-video-page-container {
     display: block;
     width: var(--width-12col);
     height: 100%;
-    margin-top: 69px;
+    margin-top: 75px;
 }
-.hero-video-page-container-img-img img{
+
+.hero-video-page-container-img {
+    display: flex;
+    justify-self: center;
+}
+
+.hero-video-page-container-img-img {
+    display: flex;
+    align-self: flex-start;
     width: 100%;
-    height: 100%;
+}
+
+.hero-video-page-container-img-img img{
+    width: 658.6657px;
+    height: 439.1107px;
+    padding-left: -30px;
 }
 
 .hero-video-page-container-text{
-    margin-left: 50px;
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    margin-bottom: 30px;
 }
+
+.hero-video-page-container-text h1 {
+    text-align: center;
+    padding-top: 60px;
+}
+
 .video-section{
     display: block;
     z-index: 100;
@@ -430,8 +452,25 @@ a{
 }
 .video-page-music-house-about-section-container-first-text {
     font-size: 12px;
+    padding-left: 15px;
+    height: 100px;
+}
+.video-page-music-house-about-section-container-header{
+    padding-left: 20px;
 }
 .video-page-music-house-about-section-container-header-second {
     font-size: 12px;
+    padding-top: 15px;
+}
+.video-page-music-house-about-section-container-header-first {
+    height: 100px;
+}
+.video-page-music-house-about-section-container-svg svg {
+    width: 150px;
+    height: 150px;
+}
+.video-section-video video {
+    width: 100%;
+    height: auto;
 }
 }
