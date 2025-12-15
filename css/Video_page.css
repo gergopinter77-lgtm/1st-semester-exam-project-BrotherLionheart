@@ -201,7 +201,7 @@ a{
 }
 
 .video-section-left-image {
-    grid-column: 7 / span 6;
+    grid-column: 11/ span 1;
     display: flex;
     justify-content: flex-end;
     color: var(--background-color-light);
@@ -229,7 +229,8 @@ a{
 
 .video-section-left-text{
     display: grid;
-    padding-left: 40px;
+    justify-content: center;
+    grid-column:6 / span 5;
 }
 .video-section-left-text a{
     align-self: center;
@@ -332,6 +333,10 @@ a{
     --width-full: 100%;
     --width-12col: 600px;
 }
+.body, html {
+    overflow-x: hidden;
+}
+
 .hamburger{
     display: block;
 }
