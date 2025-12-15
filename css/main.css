@@ -379,6 +379,7 @@ a{
 .hero_button button {
     padding: 10px 20px;
     white-space: nowrap;
+    z-index: 100;
 }
 
 .hero_cherry {
