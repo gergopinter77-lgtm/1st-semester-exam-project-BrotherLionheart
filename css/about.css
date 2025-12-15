@@ -615,7 +615,7 @@ html, body {
     background-color:  var(--brown-color);
     width: 100%;
     text-align: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .nav-item {
@@ -776,7 +776,7 @@ html, body {
     background-color:  var(--brown-color);
     width: 100%;
     text-align: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .nav-item {
@@ -877,9 +877,6 @@ html, body {
     padding: 0;
 }
 
-.description-amature-text p,.description-feel-text p,.description-fun-text p {
-
-}
 
 }
 
@@ -930,7 +927,7 @@ html, body {
     background-color:  var(--brown-color);
     width: 100%;
     text-align: center;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .nav-item {
