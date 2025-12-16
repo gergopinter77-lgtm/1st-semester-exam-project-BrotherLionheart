@@ -681,6 +681,10 @@ html, body {
     display: none;
 }
 
+.flickity-button {
+    display: none;
+}
+
 
 .board-of-directors-cards-2 {
     display: flex;
@@ -819,10 +823,6 @@ html, body {
 
 .board-of-directors-headline {
     margin-left: 50px;
-}
-
-.flickity-button {
-    display: none;
 }
 
 .carousel-cell {
