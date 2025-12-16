@@ -166,6 +166,11 @@ a{
     margin: 80px 0 0 0;
 }
 
+.hero_text i {
+    font-style: normal;
+    font-size: 120px;
+}
+
 .hero_text h1 {
     font-size: 80px;
 }
@@ -353,11 +358,16 @@ a{
 }
 
 .hero_text {
-    margin-top: 114px;
+    margin-top: 85px;
     grid-column: 3 / span 8;
     grid-row: 1;
     text-align: center;
     flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.hero_text i {
+    font-size: 90px;
 }
 
 .hero_text h1 {
@@ -438,12 +448,16 @@ a{
     --width-12col: 100%;
 }
 
+.hero_text i {
+    font-size: 80px;
+}
+
 .hero_text h1 {
     font-size: 50px;
 }
 
 .hero_button {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .hero_bridge {
@@ -472,6 +486,10 @@ a{
     --width-12col: 100%;
 } 
 
+    .hero_text i {
+    font-size: 75px;
+}
+
 .hero_text h1 {
     font-size: 45px;
 }
@@ -488,12 +506,24 @@ a{
     width: 40%;
     height: 40%;
 }
+    .hero_text i {
+    font-size: 70px;
 }
+
+.hero_text h1 {
+    font-size: 40px;
+}
+}
+
 @media (max-width: 412px) {
     :root {
     --width-full: 100%;
     --width-12col: 100%;
 }   
+
+    .hero_text i {
+    font-size: 70px;
+}
 
     .hero_text h1 {
         font-size: 40px;
