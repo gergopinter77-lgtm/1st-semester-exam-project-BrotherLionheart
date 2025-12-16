@@ -568,18 +568,6 @@ a{
     --width-full: 100%;
     --width-12col: 100%;
 
-
-    /* grid settings */
-    --grid-gap: 10px;
-    --padding-default: 20px;
-
-    /*colors */
-    --background-color-dark: #170F0D;
-    --background-color-light: #FEFFE0;
-    --primary-color: #E03A32;
-    --brown-color: #1D0E0A;
-    --white-color: #ededed;
-    --black-color: #000000;
 }
 
 html, body {
@@ -733,18 +721,6 @@ html, body {
     --width-full: 100%;
     --width-12col: 100%;
 
-
-    /* grid settings */
-    --grid-gap: 10px;
-    --padding-default: 20px;
-
-    /*colors */
-    --background-color-dark: #170F0D;
-    --background-color-light: #FEFFE0;
-    --primary-color: #E03A32;
-    --brown-color: #1D0E0A;
-    --white-color: #ededed;
-    --black-color: #000000;
 }
 
 html, body {
@@ -926,19 +902,6 @@ html, body {
     /* dimensions */
     --width-full: 100%;
     --width-12col: :100%;
-
-
-    /* grid settings */
-    --grid-gap: 10px;
-    --padding-default: 20px;
-
-    /*colors */
-    --background-color-dark: #170F0D;
-    --background-color-light: #FEFFE0;
-    --primary-color: #E03A32;
-    --brown-color: #1D0E0A;
-    --white-color: #ededed;
-    --black-color: #000000;
 }
 
 
