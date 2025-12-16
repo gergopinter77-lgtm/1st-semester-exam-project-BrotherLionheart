@@ -455,9 +455,11 @@ a{
     padding-left: 15px;
     height: 100px;
 }
+
 .video-page-music-house-about-section-container-header{
     padding-left: 20px;
 }
+
 .video-page-music-house-about-section-container-header-second {
     font-size: 12px;
     padding-top: 15px;
@@ -523,6 +525,73 @@ a{
 .video-page-music-house-about-section-container-header-second {
     padding-top: 30px;
 }
+}
+
+@media (max-width:460px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+} 
+    .video-page-music-house-about-section-container-header-second {
+    padding-top: 20px;
+}
+
+}
+
+@media (max-width:424px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+} 
+
+.video-page-music-house-about-section-container-header-second {
+    padding-top: 25px;
+}
+}
+
+@media (max-width:438px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+} 
+
+.video-page-music-house-about-section-container-header {
+    margin-bottom: 30px;
+}
+
+.video-page-music-house-about-section-container-header-second {
+    padding-top: 34px;
+}
+}
+
+@media (max-width:378px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+} 
 
 
+.video-page-music-house-about-section-container-header {
+    margin-bottom: 35px;
+}
+
+.video-page-music-house-about-section-container-header-second {
+    padding-top: 43px;
+}
+}
+
+
+@media (max-width:368px) {
+    :root {
+    --width-full: 100%;
+    --width-12col: 100%;
+}
+
+.video-page-music-house-about-section-container-header {
+    margin-bottom: 44px;
+}
+
+.video-page-music-house-about-section-container-header-second {
+    padding-top: 50px;
+}
 }
