@@ -163,7 +163,9 @@ a{
     display: block;
     margin: 0 0 -20px 0;
 }
-
+.about-the-play-title b {
+    font-size: 120px;  
+    }
 .about-the-play-title {
     display: flex;
     width: 599px;
@@ -491,6 +493,7 @@ a{
         width: 100%;
         text-align:justify;
         margin-bottom: 5px;
+
     }
 
     .about-the-play-title h1 {
@@ -503,7 +506,7 @@ a{
     }
     
     .about-the-play-title h1 b {
-        font-size: 56px;
+        font-size: 120px;
         line-height: 0.8;
         font-weight: 400;
         vertical-align: middle;
